@@ -4,6 +4,12 @@ body, input {
     font-weight: 300;
 }
 
+.error {
+	background-color: #f88;
+	border: 1px solid #f33;
+	padding: 10px;
+}
+
 #map {
     height: 800px;
     margin: 0;
