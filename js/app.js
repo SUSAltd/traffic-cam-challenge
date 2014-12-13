@@ -14,6 +14,7 @@
 (function() {
 	
 	window.onload = function() {
+		// initial resize
 		resizeMap();
 
 		var map = new google.maps.Map(document.getElementById('map'), {
@@ -29,6 +30,7 @@
 		$.getJSON('http://data.seattle.gov/resource/65fc-btcc.json')
 				.done(function(data) {
 					data.forEach(function(camera) {
+						// add the marker
 						var marker = new google.maps.Marker({
 							position: {
 								lat: parseFloat(camera.location.latitude),
